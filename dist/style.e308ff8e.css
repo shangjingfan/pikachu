@@ -1,0 +1,64 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.skin {
+  position: relative;
+}
+.nose {
+  border: 10px solid;
+  border-color: #000 transparent transparent transparent;
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  margin-left: -10px;
+}
+.nose .yuan {
+  border: 1px solid;
+  width: 20px;
+  height: 8px;
+  position: absolute;
+  top: -18px;
+  left: -10px;
+  border-radius: 10px 10px 0 0;
+  background-color: #000;
+}
+.eye {
+  border: 3px solid #000;
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  left: 50%;
+  margin-left: -32px;
+  top: 160px;
+  border-radius: 50%;
+  background-color: rgb(46, 46, 46);
+}
+.eye::after {
+  content: "";
+  display: block;
+  border: 3px solid #222;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: relative;
+  left: 6px;
+  top: 2px;
+  background-color: #fff;
+}
+.eye.left {
+  transform: translateX(-120px);
+}
+.eye.right {
+  transform: translateX(120px);
+}
+
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */
