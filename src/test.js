@@ -1,12 +1,5 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+let n = 0
+const string = `
 body{
   background-color: #ffe600;
 }
@@ -171,4 +164,16 @@ body{
 }
 .cheek.right{
   transform: translateX(160px);
-}
+}`
+
+let i = setInterval(()=>{
+    demo1.innerHTML = string.substr(0, n)
+    demo2.innerText = string.substr(0, n)
+    if(n < string.length){
+        n += 1
+    }else{
+        window.clearInterval(i)
+        return
+    }
+    console.log(n, string.substr(0, n))
+}, 10)
