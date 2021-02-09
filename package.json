@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "build": "rm -r ./dist/ && parcel src/index.html -mini"
+  },
+  "name": "pikachu",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:shangjingfan/pikachu.git",
+  "author": "shangjingfan <876625909@qq.com>",
+  "license": "MIT"
+}
